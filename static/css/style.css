@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#scoring_buttons {
+    margin-top: 20px;
+}
+
+#scoring_buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

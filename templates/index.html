@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Scoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="app">
+        <h1>PATIO</h1>
+        <div id="upload_section">
+            <input type="file" id="script_file" accept=".json">
+            <button id="upload_button">Upload</button>
+        </div>
+        <div id="scoring_section" style="display: none;">
+            <h2 id="script_title"></h2>
+            <div id="scoring_content"></div>
+            <div id="scoring_buttons">
+                <button class="score-btn" data-score="1">+1</button>
+                <button class="score-btn" data-score="0">0</button>
+                <button class="score-btn" data-score="-1">-1</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
+
